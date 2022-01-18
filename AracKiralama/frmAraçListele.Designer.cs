@@ -61,26 +61,31 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(279, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(372, 55);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(640, 381);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(853, 469);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(186, 445);
+            this.button2.Location = new System.Drawing.Point(248, 548);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 38);
+            this.button2.Size = new System.Drawing.Size(88, 47);
             this.button2.TabIndex = 35;
             this.button2.Text = "İptal";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(82, 445);
+            this.button1.Location = new System.Drawing.Point(109, 548);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(69, 38);
+            this.button1.Size = new System.Drawing.Size(92, 47);
             this.button1.TabIndex = 34;
             this.button1.Text = "Güncelle";
             this.button1.UseVisualStyleBackColor = true;
@@ -89,72 +94,80 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(20, 410);
+            this.label8.Location = new System.Drawing.Point(27, 505);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 13);
+            this.label8.Size = new System.Drawing.Size(68, 16);
             this.label8.TabIndex = 33;
             this.label8.Text = "Kira Ücreti";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(45, 383);
+            this.label7.Location = new System.Drawing.Point(60, 471);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.Size = new System.Drawing.Size(37, 16);
             this.label7.TabIndex = 32;
             this.label7.Text = "Yakıt";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(53, 356);
+            this.label6.Location = new System.Drawing.Point(71, 438);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(23, 13);
+            this.label6.Size = new System.Drawing.Size(26, 16);
             this.label6.TabIndex = 31;
             this.label6.Text = "KM";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 329);
+            this.label5.Location = new System.Drawing.Point(57, 405);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.Size = new System.Drawing.Size(39, 16);
             this.label5.TabIndex = 30;
             this.label5.Text = "Renk";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 302);
+            this.label4.Location = new System.Drawing.Point(31, 372);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(68, 16);
             this.label4.TabIndex = 29;
             this.label4.Text = "Model(Yıl)";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 275);
+            this.label3.Location = new System.Drawing.Point(68, 338);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 13);
+            this.label3.Size = new System.Drawing.Size(31, 16);
             this.label3.TabIndex = 28;
             this.label3.Text = "Seri";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 248);
+            this.label2.Location = new System.Drawing.Point(52, 305);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(45, 16);
             this.label2.TabIndex = 27;
             this.label2.Text = "Marka";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 221);
+            this.label1.Location = new System.Drawing.Point(56, 272);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 26;
             this.label1.Text = "Plaka";
             // 
@@ -165,17 +178,19 @@
             "Dizel",
             "Benzin",
             "Benzin + Lpg"});
-            this.yakitcombo.Location = new System.Drawing.Point(82, 379);
+            this.yakitcombo.Location = new System.Drawing.Point(109, 466);
+            this.yakitcombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.yakitcombo.Name = "yakitcombo";
-            this.yakitcombo.Size = new System.Drawing.Size(170, 21);
+            this.yakitcombo.Size = new System.Drawing.Size(225, 24);
             this.yakitcombo.TabIndex = 25;
             // 
             // sericombo
             // 
             this.sericombo.FormattingEnabled = true;
-            this.sericombo.Location = new System.Drawing.Point(82, 274);
+            this.sericombo.Location = new System.Drawing.Point(109, 337);
+            this.sericombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sericombo.Name = "sericombo";
-            this.sericombo.Size = new System.Drawing.Size(170, 21);
+            this.sericombo.Size = new System.Drawing.Size(225, 24);
             this.sericombo.TabIndex = 24;
             // 
             // markacombo
@@ -186,52 +201,62 @@
             "Renault",
             "Fiat",
             "Ford"});
-            this.markacombo.Location = new System.Drawing.Point(82, 247);
+            this.markacombo.Location = new System.Drawing.Point(109, 304);
+            this.markacombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.markacombo.Name = "markacombo";
-            this.markacombo.Size = new System.Drawing.Size(170, 21);
+            this.markacombo.Size = new System.Drawing.Size(225, 24);
             this.markacombo.TabIndex = 23;
             this.markacombo.SelectedIndexChanged += new System.EventHandler(this.markacombo_SelectedIndexChanged);
             // 
             // kiratxt
             // 
-            this.kiratxt.Location = new System.Drawing.Point(82, 406);
+            this.kiratxt.Location = new System.Drawing.Point(109, 500);
+            this.kiratxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kiratxt.Name = "kiratxt";
-            this.kiratxt.Size = new System.Drawing.Size(170, 20);
+            this.kiratxt.Size = new System.Drawing.Size(225, 22);
             this.kiratxt.TabIndex = 22;
             // 
             // renktxt
             // 
-            this.renktxt.Location = new System.Drawing.Point(82, 327);
+            this.renktxt.Location = new System.Drawing.Point(109, 402);
+            this.renktxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.renktxt.Name = "renktxt";
-            this.renktxt.Size = new System.Drawing.Size(170, 20);
+            this.renktxt.Size = new System.Drawing.Size(225, 22);
             this.renktxt.TabIndex = 21;
             // 
             // yiltxt
             // 
-            this.yiltxt.Location = new System.Drawing.Point(82, 301);
+            this.yiltxt.Location = new System.Drawing.Point(109, 370);
+            this.yiltxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.yiltxt.Name = "yiltxt";
-            this.yiltxt.Size = new System.Drawing.Size(170, 20);
+            this.yiltxt.Size = new System.Drawing.Size(225, 22);
             this.yiltxt.TabIndex = 20;
             // 
             // kmtxt
             // 
-            this.kmtxt.Location = new System.Drawing.Point(82, 353);
+            this.kmtxt.Location = new System.Drawing.Point(109, 434);
+            this.kmtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kmtxt.Name = "kmtxt";
-            this.kmtxt.Size = new System.Drawing.Size(170, 20);
+            this.kmtxt.Size = new System.Drawing.Size(225, 22);
             this.kmtxt.TabIndex = 19;
             // 
             // plakatxt
             // 
-            this.plakatxt.Location = new System.Drawing.Point(82, 221);
+            this.plakatxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.plakatxt.ForeColor = System.Drawing.Color.White;
+            this.plakatxt.Location = new System.Drawing.Point(109, 272);
+            this.plakatxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.plakatxt.Name = "plakatxt";
-            this.plakatxt.Size = new System.Drawing.Size(170, 20);
+            this.plakatxt.ReadOnly = true;
+            this.plakatxt.Size = new System.Drawing.Size(225, 22);
             this.plakatxt.TabIndex = 18;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(850, 445);
+            this.button4.Location = new System.Drawing.Point(1133, 548);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(69, 38);
+            this.button4.Size = new System.Drawing.Size(92, 47);
             this.button4.TabIndex = 38;
             this.button4.Text = "Sil";
             this.button4.UseVisualStyleBackColor = true;
@@ -240,9 +265,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(706, 21);
+            this.label9.Location = new System.Drawing.Point(941, 26);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.Size = new System.Drawing.Size(45, 16);
             this.label9.TabIndex = 40;
             this.label9.Text = "Marka";
             // 
@@ -253,26 +279,29 @@
             "Tüm Araçlar",
             "Boş Araçlar",
             "Dolu Araçlar"});
-            this.comboBox1.Location = new System.Drawing.Point(749, 18);
+            this.comboBox1.Location = new System.Drawing.Point(999, 22);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 21);
+            this.comboBox1.Size = new System.Drawing.Size(225, 24);
             this.comboBox1.TabIndex = 39;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(45, 45);
+            this.pictureBox2.Location = new System.Drawing.Point(60, 55);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(207, 126);
+            this.pictureBox2.Size = new System.Drawing.Size(276, 155);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 41;
             this.pictureBox2.TabStop = false;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(164, 177);
+            this.button3.Location = new System.Drawing.Point(219, 218);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 30);
+            this.button3.Size = new System.Drawing.Size(117, 37);
             this.button3.TabIndex = 36;
             this.button3.Text = "Resim Değiştir";
             this.button3.UseVisualStyleBackColor = true;
@@ -284,10 +313,10 @@
             // 
             // frmAraçListele
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(953, 559);
+            this.ClientSize = new System.Drawing.Size(1271, 688);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
@@ -312,6 +341,7 @@
             this.Controls.Add(this.kmtxt);
             this.Controls.Add(this.plakatxt);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmAraçListele";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Araç Listeleme";
