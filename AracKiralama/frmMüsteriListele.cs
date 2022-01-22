@@ -91,5 +91,10 @@ namespace AracKiralama
             arackiralama.ekle_sil_güncelle(komut2, cümle);
             YenileListele();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

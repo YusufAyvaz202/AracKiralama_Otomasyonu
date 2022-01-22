@@ -38,16 +38,37 @@ namespace AracKiralama
             string sorgu3 = "select * from sözleşme";
             NpgsqlDataAdapter adtr2 = new NpgsqlDataAdapter();
             dataGridView1.DataSource = arac.listele(adtr2, sorgu3);
+
+            dataGridView1.Columns[0].HeaderText = "TC";
+            dataGridView1.Columns[1].HeaderText = "AD SOYAD";
+            dataGridView1.Columns[2].HeaderText = "TELEFON";
+            dataGridView1.Columns[3].HeaderText = "EHLİYET NO";
+            dataGridView1.Columns[4].HeaderText = "EHLİYET TARİH";
+            dataGridView1.Columns[5].HeaderText = "EHLİYET YER";
+            dataGridView1.Columns[6].HeaderText = "PLAKA";
+            dataGridView1.Columns[7].HeaderText = "MARKA";
+            dataGridView1.Columns[8].HeaderText = "SERİ";
+            dataGridView1.Columns[9].HeaderText = "MODEL";
+            dataGridView1.Columns[10].HeaderText = "RENK";
+            dataGridView1.Columns[11].HeaderText = "KİRA ŞEKLİ";
+            dataGridView1.Columns[12].HeaderText = "KİRA ÜCRETİ";
+            dataGridView1.Columns[13].HeaderText = "GÜN";
+            dataGridView1.Columns[14].HeaderText = "TUTAR";
+            dataGridView1.Columns[15].HeaderText = "ÇIKIŞ TARİHİ";
+            dataGridView1.Columns[16].HeaderText = "DÖNÜŞ TARİHİ";
+
+
+            // DataGrid Header Textleri burada değiştirilecek.
         }
 
-        private void textBox9_TextChanged(object sender, EventArgs e) //Yanlış
+        private void textBox9_TextChanged(object sender, EventArgs e) 
         {
-            // Silinince hata alındığı için duruyor....
+            // Silinince hata alındığı için duruyor... Çözüm araştırılacak.
         }
 
-        private void label9_Click(object sender, EventArgs e) //Yanlış
+        private void label9_Click(object sender, EventArgs e) 
         {
-            // Silinince hata alındığı için duruyor....
+            // Silinince hata alındığı için duruyor... Çözüm araştırılacak.
 
         }
 

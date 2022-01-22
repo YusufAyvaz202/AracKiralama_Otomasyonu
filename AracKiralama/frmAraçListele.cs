@@ -54,6 +54,21 @@ namespace AracKiralama
             string cümle = "select * from araç";
             NpgsqlDataAdapter adtr2 = new NpgsqlDataAdapter();
             dataGridView1.DataSource = arackiralama.listele(adtr2, cümle);
+
+
+            dataGridView1.Columns[0].HeaderText = "PLAKA";
+            dataGridView1.Columns[1].HeaderText = "MARKA";
+            dataGridView1.Columns[2].HeaderText = "SERİ";
+            dataGridView1.Columns[3].HeaderText = "MODEL";
+            dataGridView1.Columns[4].HeaderText = "RENK";
+            dataGridView1.Columns[5].HeaderText = "KM";
+            dataGridView1.Columns[6].HeaderText = "YAKIT";
+            dataGridView1.Columns[7].HeaderText = "KİRA ÜCRETİ";
+            dataGridView1.Columns[8].HeaderText = "RESİM YOLU";
+            dataGridView1.Columns[9].HeaderText = "DURUM";
+            dataGridView1.Columns[10].HeaderText = "TARİH";
+
+            // DataGrid Header Textleri burada değiştirilecek.
         }
 
         private void button3_Click(object sender, EventArgs e)
