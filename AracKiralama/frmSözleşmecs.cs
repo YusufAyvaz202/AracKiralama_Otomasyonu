@@ -176,26 +176,26 @@ namespace AracKiralama
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow satır = dataGridView1.CurrentRow;
-            txtTc.Text =satır.Cells[0].Value.ToString();
-            txtAdSoyad.Text =satır.Cells[1].Value.ToString();
-            txtTelefon.Text =satır.Cells[2].Value.ToString();
-            txtE_No.Text =satır.Cells[3].Value.ToString();
-            txtE_Tarih.Text =satır.Cells[4].Value.ToString();
-            txtE_yer.Text =satır.Cells[5].Value.ToString();
-            comboAraçlar.Text =satır.Cells[6].Value.ToString();
-            txtMarka.Text =satır.Cells[7].Value.ToString();
-            txtSeri.Text =satır.Cells[8].Value.ToString();
-            txtYıl.Text =satır.Cells[9].Value.ToString();
-            txtRenk.Text =satır.Cells[10].Value.ToString();
-            comboKiraŞekli.Text =satır.Cells[11].Value.ToString();
-            txtKiraÜcreti.Text =satır.Cells[12].Value.ToString();
-            txtGün.Text =satır.Cells[13].Value.ToString();
-            txtTutar.Text =satır.Cells[14].Value.ToString();
-            dateÇıkış.Text =satır.Cells[15].Value.ToString();
-            dateDönüş.Text =satır.Cells[16].Value.ToString();
+            txtTc.Text = satır.Cells[0].Value.ToString();
+            txtAdSoyad.Text = satır.Cells[1].Value.ToString();
+            txtTelefon.Text = satır.Cells[2].Value.ToString();
+            txtE_No.Text = satır.Cells[3].Value.ToString();
+            txtE_Tarih.Text = satır.Cells[4].Value.ToString();
+            txtE_yer.Text = satır.Cells[5].Value.ToString();
+            comboAraçlar.Text = satır.Cells[6].Value.ToString();
+            txtMarka.Text = satır.Cells[7].Value.ToString();
+            txtSeri.Text = satır.Cells[8].Value.ToString();
+            txtYıl.Text = satır.Cells[9].Value.ToString();
+            txtRenk.Text = satır.Cells[10].Value.ToString();
+            comboKiraŞekli.Text = satır.Cells[11].Value.ToString();
+            txtKiraÜcreti.Text = satır.Cells[12].Value.ToString();
+            txtGün.Text = satır.Cells[13].Value.ToString();
+            txtTutar.Text = satır.Cells[14].Value.ToString();
+            dateÇıkış.Text = satır.Cells[15].Value.ToString();
+            dateDönüş.Text = satır.Cells[16].Value.ToString();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e) //Tek tıklamada boş data grid satırını tıklanır ise hata veriyor.
         {
             DataGridViewRow satır = dataGridView1.CurrentRow;
             //Gün farkı
@@ -207,12 +207,15 @@ namespace AracKiralama
             int ucretfarkı;
 
             ucretfarkı = _gunfarkı * ucret;
-            txtEkstra.Text=ucretfarkı.ToString();
+            txtEkstra.Text = ucretfarkı.ToString();
+
+
+
         }
 
         private void btnAraçTeslim_Click(object sender, EventArgs e)
         {
-            if (int.Parse(txtEkstra.Text) >=0 || int.Parse(txtEkstra.Text)<0)
+            if (int.Parse(txtEkstra.Text) >= 0 || int.Parse(txtEkstra.Text) < 0)
             {
                 DataGridViewRow satır = dataGridView1.CurrentRow;
                 DateTime bugün = DateTime.Parse(DateTime.Now.ToShortDateString());
@@ -223,10 +226,10 @@ namespace AracKiralama
                 int _gun = gun.Days;
                 int toplamtutar = _gun * ucret;
 
-                string sorgu1= "delete from sözleşme where plaka='"+satır.Cells["plaka"].Value.ToString()+"'";
+                string sorgu1 = "delete from sözleşme where plaka='" + satır.Cells["plaka"].Value.ToString() + "'";
                 NpgsqlCommand komut = new NpgsqlCommand();
                 arac.ekle_sil_güncelle(komut, sorgu1);
-                string sorgu2 = "update araç set durum='BOŞ' where plaka='"+satır.Cells["plaka"].Value.ToString()+"'";
+                string sorgu2 = "update araç set durum='BOŞ' where plaka='" + satır.Cells["plaka"].Value.ToString() + "'";
                 NpgsqlCommand komut3 = new NpgsqlCommand();
                 arac.ekle_sil_güncelle(komut3, sorgu2);
 
@@ -250,7 +253,7 @@ namespace AracKiralama
                 arac.ekle_sil_güncelle(komut2, sorgu3);
 
                 MessageBox.Show("Araç teslim edildi");
-                
+
                 comboAraçlar.Items.Clear();
                 Boş_Araçlar();
                 Yenile();
@@ -259,7 +262,7 @@ namespace AracKiralama
                 comboAraçlar.Text = "";
                 Temizle();
                 txtEkstra.Text = "";
-            } 
+            }
             else
             {
                 MessageBox.Show("Lütfen seçim yapınız.", "Uyarı");

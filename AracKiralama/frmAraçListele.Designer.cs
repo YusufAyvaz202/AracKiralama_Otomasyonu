@@ -59,10 +59,11 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Tomato;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(372, 55);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(853, 469);
@@ -72,7 +73,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(248, 548);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 47);
             this.button2.TabIndex = 35;
@@ -83,7 +84,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(109, 548);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 47);
             this.button1.TabIndex = 34;
@@ -179,7 +180,7 @@
             "Benzin",
             "Benzin + Lpg"});
             this.yakitcombo.Location = new System.Drawing.Point(109, 466);
-            this.yakitcombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yakitcombo.Margin = new System.Windows.Forms.Padding(4);
             this.yakitcombo.Name = "yakitcombo";
             this.yakitcombo.Size = new System.Drawing.Size(225, 24);
             this.yakitcombo.TabIndex = 25;
@@ -188,7 +189,7 @@
             // 
             this.sericombo.FormattingEnabled = true;
             this.sericombo.Location = new System.Drawing.Point(109, 337);
-            this.sericombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sericombo.Margin = new System.Windows.Forms.Padding(4);
             this.sericombo.Name = "sericombo";
             this.sericombo.Size = new System.Drawing.Size(225, 24);
             this.sericombo.TabIndex = 24;
@@ -202,7 +203,7 @@
             "Fiat",
             "Ford"});
             this.markacombo.Location = new System.Drawing.Point(109, 304);
-            this.markacombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.markacombo.Margin = new System.Windows.Forms.Padding(4);
             this.markacombo.Name = "markacombo";
             this.markacombo.Size = new System.Drawing.Size(225, 24);
             this.markacombo.TabIndex = 23;
@@ -211,7 +212,7 @@
             // kiratxt
             // 
             this.kiratxt.Location = new System.Drawing.Point(109, 500);
-            this.kiratxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kiratxt.Margin = new System.Windows.Forms.Padding(4);
             this.kiratxt.Name = "kiratxt";
             this.kiratxt.Size = new System.Drawing.Size(225, 22);
             this.kiratxt.TabIndex = 22;
@@ -219,7 +220,7 @@
             // renktxt
             // 
             this.renktxt.Location = new System.Drawing.Point(109, 402);
-            this.renktxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.renktxt.Margin = new System.Windows.Forms.Padding(4);
             this.renktxt.Name = "renktxt";
             this.renktxt.Size = new System.Drawing.Size(225, 22);
             this.renktxt.TabIndex = 21;
@@ -227,7 +228,7 @@
             // yiltxt
             // 
             this.yiltxt.Location = new System.Drawing.Point(109, 370);
-            this.yiltxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.yiltxt.Margin = new System.Windows.Forms.Padding(4);
             this.yiltxt.Name = "yiltxt";
             this.yiltxt.Size = new System.Drawing.Size(225, 22);
             this.yiltxt.TabIndex = 20;
@@ -235,17 +236,17 @@
             // kmtxt
             // 
             this.kmtxt.Location = new System.Drawing.Point(109, 434);
-            this.kmtxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kmtxt.Margin = new System.Windows.Forms.Padding(4);
             this.kmtxt.Name = "kmtxt";
             this.kmtxt.Size = new System.Drawing.Size(225, 22);
             this.kmtxt.TabIndex = 19;
             // 
             // plakatxt
             // 
-            this.plakatxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.plakatxt.ForeColor = System.Drawing.Color.White;
+            this.plakatxt.BackColor = System.Drawing.Color.Yellow;
+            this.plakatxt.ForeColor = System.Drawing.Color.Black;
             this.plakatxt.Location = new System.Drawing.Point(109, 272);
-            this.plakatxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.plakatxt.Margin = new System.Windows.Forms.Padding(4);
             this.plakatxt.Name = "plakatxt";
             this.plakatxt.ReadOnly = true;
             this.plakatxt.Size = new System.Drawing.Size(225, 22);
@@ -254,7 +255,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(1133, 548);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(92, 47);
             this.button4.TabIndex = 38;
@@ -280,7 +281,7 @@
             "Boş Araçlar",
             "Dolu Araçlar"});
             this.comboBox1.Location = new System.Drawing.Point(999, 22);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(225, 24);
             this.comboBox1.TabIndex = 39;
@@ -289,7 +290,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(60, 55);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(276, 155);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -299,7 +300,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(219, 218);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 37);
             this.button3.TabIndex = 36;
@@ -341,7 +342,7 @@
             this.Controls.Add(this.kmtxt);
             this.Controls.Add(this.plakatxt);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAraçListele";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Araç Listeleme";
